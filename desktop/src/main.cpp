@@ -1,15 +1,14 @@
-#include <iostream>
-#include <thread>  //①
+#include "bits/stdc++.h"
 
-void hello()  //②
-{
-  std::cout << "Hello Concurrent World\n";
-}
-
+ 
 int main()
 {
-    
-    std::thread t(hello);  //③
-    t.join();
+    long long x;
+    std::stringstream ss;
+    ss << std::hex << "FFFFFFFF";
+    ss >> x;
+    // std::string out = "1A";
+    // long long x = std::stoi(out, nullptr, 16);
+    std::cout << x << std::endl;
     return 0;
 }
